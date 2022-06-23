@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test suite 2"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="62.682">
+    <properties></properties>
+
+
+
+            <testcase
+                name="TC0006_user_login_test"
+                time="22.040"
+                classname="org.mikehenze.alexnova.testcases.LogInTests">
+            </testcase>
+            <testcase
+                name="TC0007_user_login_invalid_email_test"
+                time="40.642"
+                classname="org.mikehenze.alexnova.testcases.LogInTests">
+            </testcase>
+</testsuite>
