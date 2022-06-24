@@ -10,10 +10,7 @@ import org.mikehenze.alexnova.pages.LandingPage;
 import org.mikehenze.alexnova.pages.SearchPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -77,6 +74,11 @@ public class SearchProductTests {
 
         String expected = "No results found. Showing top popular products you might want to consider...";
         Assert.assertEquals(expected, searchPage.blankSearchText());
+    }
+
+    @AfterClass
+    public void quitBrowser() {
+        driver.quit();
     }
 
     @AfterSuite

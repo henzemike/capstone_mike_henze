@@ -9,10 +9,7 @@ import org.mikehenze.alexnova.library.SelectBrowser;
 import org.mikehenze.alexnova.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.time.Duration;
 
@@ -85,6 +82,11 @@ public class LogInTests {
 
         String expected = "Sorry! Please try that again.";
         Assert.assertEquals(expected, loginPage.getSignUpError());
+    }
+
+    @AfterClass
+    public void quitBrowser() {
+        driver.quit();
     }
 
     @AfterSuite

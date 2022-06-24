@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suite">
-    <test name="test suite">
+    <test name="test suite 1">
      <classes>
          <class  name="org.mikehenze.alexnova.testcases.RegistrationTests"/>
-         <class name="org.mikehenze.alexnova.testcases.LogInTests"/>
-         <class name="org.mikehenze.alexnova.testcases.SearchProductTests"/>
-         <class name="org.mikehenze.alexnova.testcases.ProductCartTests"/>
-         <class name="org.mikehenze.alexnova.testcases.GiftCardTests"/>
-         <class name="org.mikehenze.alexnova.testcases.CheckoutTests"/>
      </classes>
+    </test>
+    <test name="test suite 2">
+        <classes>
+                <class name="org.mikehenze.alexnova.testcases.LogInTests"/>
+        </classes>
+    </test>
+    <test name="test suite 3">
+        <classes>
+                <class name="org.mikehenze.alexnova.testcases.SearchProductTests"/>
+        </classes>
+    </test>
+    <test name="test suite 4">
+        <classes>
+                <class name="org.mikehenze.alexnova.testcases.ProductCartTests"/>
+        </classes>
+    </test>
+    <test name="test suite 5">
+        <classes>
+                <class name="org.mikehenze.alexnova.testcases.GiftCardTests"/>
+        </classes>
+    </test>
+    <test name="test suite 6">
+        <classes>
+                <class name="org.mikehenze.alexnova.testcases.CheckoutTests"/>
+        </classes>
     </test>
 </suite>

@@ -15,10 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -139,6 +136,10 @@ public class CheckoutTests {
         Assert.assertEquals(checkoutPage.getPayNowText(), expected);
     }
 
+    @AfterClass
+    public void quitBrowser() {
+        driver.quit();
+    }
 
 
     @AfterSuite
