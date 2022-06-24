@@ -25,7 +25,7 @@ public class ProductPage {
     By productQuantity = By.name("quantity");
 
     // add to cart button
-    By cartButton = By.xpath("//*[@id='product_form_6831262531637']/div[4]/input");
+    By cartButton = By.xpath("//*[contains(@id, 'product_form_')]/div[4]/input");
 
     //open cart button
     By openCart = By.xpath("//*[@id='shopify-section-header']/section/header/div[1]/div/div[2]/div[2]/a");

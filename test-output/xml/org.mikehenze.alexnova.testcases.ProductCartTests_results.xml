@@ -1,47 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test suite"
-           tests="7"
+<testsuite name="Henze_Mike_Capstone_AlexNova"
+           tests="6"
            failures="0"
            errors="0"
-           skipped="7"
-           time="0.000">
+           skipped="0"
+           time="66.515">
     <properties></properties>
 
 
-            <testcase
-                name="quitBrowser"
-                time="0.0"
-                classname="org.mikehenze.alexnova.testcases.ProductCartTests">
-            </testcase>
+
             <testcase
                 name="TC0011_add_product_to_cart_test"
-                time="0.0"
-                classname="org.mikehenze.alexnova.testcases.ProductCartTests">
-            </testcase>
-            <testcase
-                name="TC0015_remove_product_from_cart_test"
-                time="0.0"
+                time="14.807"
                 classname="org.mikehenze.alexnova.testcases.ProductCartTests">
             </testcase>
             <testcase
                 name="TC0014_product_price_in_cart_quantity_test"
-                time="0.0"
+                time="0.734"
                 classname="org.mikehenze.alexnova.testcases.ProductCartTests">
             </testcase>
             <testcase
                 name="TC0013_check_product_quantity_in_cart_test"
-                time="0.0"
+                time="21.876"
                 classname="org.mikehenze.alexnova.testcases.ProductCartTests">
             </testcase>
             <testcase
-                name="TC0010_check_product_page_price_test"
-                time="0.0"
+                name="TC0015_remove_product_from_cart_test"
+                time="1.361"
                 classname="org.mikehenze.alexnova.testcases.ProductCartTests">
             </testcase>
             <testcase
                 name="TC0012_refresh_page_checking_items_still_in_cart_test"
-                time="0.0"
+                time="0.970"
                 classname="org.mikehenze.alexnova.testcases.ProductCartTests">
             </testcase>
-
+            <testcase
+                name="TC0010_check_product_page_price_test"
+                time="26.767"
+                classname="org.mikehenze.alexnova.testcases.ProductCartTests">
+            </testcase>
 </testsuite>

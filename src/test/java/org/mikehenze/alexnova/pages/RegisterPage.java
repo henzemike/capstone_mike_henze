@@ -29,14 +29,6 @@ public class RegisterPage {
     //xpath for register button
     By registerButton = By.xpath("//div/input[@Value='Register']");
 
-    //xpath for iframe to get to recaptcha
-    By frame = By.xpath("//*[@id='g-recaptcha']/div/div/iframe");
-
-    //xpath for checkbox on recaptcha
-    By reCaptchaCheckbox = By.xpath("//*[@id='recaptcha-anchor']/div[1]");
-
-    //recaptcha submit button
-    By captchaSubmit = By.xpath("//*[@id='keyboard-nav-3']/div/form/input[2]");
 
     public RegisterPage(WebDriver driver) {
         this.driver = driver;
@@ -81,27 +73,7 @@ public class RegisterPage {
     public void submitRegisterButton() {
 
         driver.findElement(registerButton).submit();
-
-//        if (driver.findElement(frame).isDisplayed()) {
-//            driver.switchTo().frame(driver.findElement(frame));
-//            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-//            driver.findElement(reCaptchaCheckbox).click();
-//            driver.findElement(captchaSubmit).click();
-//            driver.switchTo().parentFrame();
-//
-//        }
-
-
     }
 
-//    public void clickIframeReCaptcha() {
-//        if (driver.findElement(frame).isDisplayed()) {
-//            driver.switchTo().frame(driver.findElement(frame));
-//            driver.findElement(reCaptchaCheckbox).click();
-//            driver.switchTo().parentFrame();
-//        } else {
-//            loginPage.clickOnAccountButton();
-//        }
-//    }
 
 }

@@ -15,9 +15,6 @@ public class ProductCartPage {
     //remove product from cart
     By removeProduct = By.xpath("//*[@id='shopify-section-cart']/section/form/table/tbody/tr/td[1]/a[2]");
 
-    //product quantity text
-    By productQuantityText = By.xpath("//*[@id='updates_40723160268853']");
-
     //product price
     By productPrice = By.xpath("/html/body/div[3]/div/section/form/table/tbody/tr/td[2]/span/span");
 
@@ -55,7 +52,7 @@ public class ProductCartPage {
 
     //method to get product quantity value
     public String productQuantityValue() {
-        WebElement quantity = driver.findElement(productQuantityText);
+        WebElement quantity = driver.findElement(productQuantity);
         String quantityNumber = quantity.getAttribute("value");
         return quantityNumber;
     }
