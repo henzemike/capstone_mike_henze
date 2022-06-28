@@ -50,7 +50,7 @@ public class RegisterPage {
         driver.findElement(lastNameField).sendKeys(lastName);
     }
 
-    //method to enter first name
+    //method to enter email
     public void enterEmail(String emailName, String emailEnding) {
         if (emailName != "" && emailEnding != "") {
             //imported Random
@@ -64,7 +64,7 @@ public class RegisterPage {
 
     }
 
-    //method to enter first name
+    //method to enter password
     public void enterPassword(String password) {
         driver.findElement(passwordField).sendKeys(password);
     }
